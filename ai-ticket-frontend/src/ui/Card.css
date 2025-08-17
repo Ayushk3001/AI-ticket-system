@@ -1,0 +1,80 @@
+.card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: box-shadow 0.15s ease;
+}
+
+/* Padding variants */
+.card--padding-none {
+  padding: 0;
+}
+
+.card--padding-sm {
+  padding: var(--space-4);
+}
+
+.card--padding-md {
+  padding: var(--space-6);
+}
+
+.card--padding-lg {
+  padding: var(--space-8);
+}
+
+/* Shadow variants */
+.card--shadow-none {
+  box-shadow: none;
+}
+
+.card--shadow-sm {
+  box-shadow: var(--shadow-sm);
+}
+
+.card--shadow-md {
+  box-shadow: var(--shadow);
+}
+
+.card--shadow-lg {
+  box-shadow: var(--shadow-md);
+}
+
+.card:hover.card--shadow-sm {
+  box-shadow: var(--shadow);
+}
+
+.card:hover.card--shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+/* Card sections */
+.card-header {
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-4);
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-footer {
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border);
+  margin-top: var(--space-4);
+}
+
+/* When card has no padding, adjust sections */
+.card--padding-none .card-header {
+  padding: var(--space-6) var(--space-6) var(--space-4) var(--space-6);
+  margin-bottom: 0;
+}
+
+.card--padding-none .card-content {
+  padding: 0 var(--space-6);
+}
+
+.card--padding-none .card-footer {
+  padding: var(--space-4) var(--space-6) var(--space-6) var(--space-6);
+  margin-top: 0;
+}

@@ -1,0 +1,27 @@
+.skeleton {
+  background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--border) 50%, var(--bg-secondary) 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.skeleton--rectangular {
+  border-radius: var(--radius);
+}
+
+.skeleton--circular {
+  border-radius: 50%;
+}
+
+.skeleton--text {
+  border-radius: var(--radius-sm);
+  height: 1em;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

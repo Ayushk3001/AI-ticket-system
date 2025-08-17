@@ -1,0 +1,87 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+}
+
+/* Sizes */
+.badge--sm {
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-xs);
+}
+
+.badge--md {
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--font-size-sm);
+}
+
+.badge--lg {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-base);
+}
+
+/* Variants */
+.badge--default {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+.badge--primary {
+  background-color: rgb(91 124 250 / 0.1);
+  color: var(--primary);
+}
+
+.badge--success {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+.badge--warning {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.badge--danger {
+  background-color: var(--danger-bg);
+  color: var(--danger);
+}
+
+.badge--info {
+  background-color: var(--info-bg);
+  color: var(--info);
+}
+
+/* Priority variants */
+.badge--high {
+  background-color: var(--danger-bg);
+  color: var(--danger);
+}
+
+.badge--medium {
+  background-color: var(--warning-bg);
+  color: var(--warning);
+}
+
+.badge--low {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
+
+/* Status variants */
+.badge--todo {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+.badge--in_progress {
+  background-color: var(--info-bg);
+  color: var(--info);
+}
+
+.badge--done {
+  background-color: var(--success-bg);
+  color: var(--success);
+}
